@@ -50,16 +50,19 @@ Published-CGM-Data-main/
 1. **GVC-Calc App** — visit the app site [GVC-Calc](https://gvc-calc.streamlit.app/).
 2. **Select `Data Structure`** - this is the first step. It let's the app know the structure of the data files (datetime column, glucose column, header row, etc.)
 
-<img width="748" height="228" alt="image" src="https://github.com/user-attachments/assets/8a37b5cc-30de-4ebd-88c8-5bf606235635" />
+<img width="748" height="228" alt="image" src="https://github.com/user-attachments/assets/8a37b5cc-30de-4ebd-88c8-5bf606235635" /> <br>
 
-3. **Click `Browse files`** — select one of the folders and use that data. In this example, we use the first file in `hall_data`.
+
+3. **Click Browse files** — select one of the folders and use that data. In this example, we use the first file in `hall_data`.<br>
 
 <img width="602" height="420" alt="image" src="https://github.com/user-attachments/assets/374b7e37-7cfc-4acb-9edf-6cc70d5d9d77" />
 
-<img width="543" height="144" alt="image" src="https://github.com/user-attachments/assets/9a30a545-cafa-4a4f-80c2-99db97b12509" />
+<img width="543" height="144" alt="image" src="https://github.com/user-attachments/assets/9a30a545-cafa-4a4f-80c2-99db97b12509" /> <br>
 
-4. **Select the appropriate settings for the files in this folder.** — Choose the header row, the number of rows to be skipped, time deltas used (1 or 5 for this data), the datetime column and the glucose column. Click `OK -> Import` to allow that option on the sidebar.
-<img width="749" height="549" alt="image" src="https://github.com/user-attachments/assets/9a24d2eb-215b-47e7-b0d5-9118b7c2334b" />
+4. **Select the appropriate settings for the files in this folder.** — Choose the header row, the number of rows to be skipped, time deltas used (1 or 5 for this data), the datetime column and the glucose column. Click `OK -> Import` to allow that option on the sidebar. <br>
 
-5. **Import Data** — Select the `Import Data` menu from the sidebar which only appears after Step 4. Select the `Browse files` from this page and then select the files from the folder that contain CGM files that are similar in structure to the file you browsed in Step 3. Select the data by holding down the \<Shift\> ⬆️ or \<Ctrl\> 🔼 keys  
+<img width="749" height="549" alt="image" src="https://github.com/user-attachments/assets/9a24d2eb-215b-47e7-b0d5-9118b7c2334b" /> <br>
+
+5. **Import Data** — Select the `Import Data` menu from the sidebar which only appears after Step 4. Select the `Browse files` from this page and then select the files from the folder that contain CGM files that are similar in structure to the file you browsed in Step 3. Select the data by holding down the \<Shift\> ⬆️ or \<Ctrl\> 🔼 keys to select multiple files.<br>
+
 <img width="601" height="552" alt="image" src="https://github.com/user-attachments/assets/f49bd38b-c477-43a0-a80a-3c80b3195f04" />
