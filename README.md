@@ -9,10 +9,10 @@ This repository is here for anyone running [GVC-Calc](https://gvc-calc.streamlit
 
 ```
 Published-CGM-Data/
-├── data/                         ← top level data folder
+├── data/                              ← top level data folder
 │   ├── hall_data/                     ← Data from Hall (2018 Study)
-│   ├── osuna_data/                    ← Data from 
-└── README.md                     ← you are here
+│   ├── osuna_data/                    ← Data from Osuna (2025 Osuna)
+└── README.md                          ← you are here
 ```
 The data in this repository comes from the following sources and have been preprocessed for easy use in the app and to mimic how data comes from a CGM.
 
@@ -33,7 +33,33 @@ Gutierrez-Osuna, R., Kerr, D., Mortazavi, B., & Das, A. (2025). CGMacros: a scie
 
 <img width="598" height="302" alt="image" src="https://github.com/user-attachments/assets/dffc602e-6e59-454f-a0c3-d53ebc59de85" />
 
-3. **GVC-Calc App** — visit the app site and follow the directions. Use the app by navigating to each folder from the unzipped directory.
+3. **Data in Folders** — Each of these folders can be processed with GVC-Calc. Follow the directions in the following section.
+
+```
+Published-CGM-Data-main/
+├── data/                              ← top level data folder
+│   ├── hall_data/                     ← Data from Hall (2018 Study)
+│   ├── osuna_data/                    ← Data from Osuna (2025 Osuna)
+├── README.md                          ← you are here
+└── LICENSE                            
+```
 
 ---
+## Using GVC Calc with this data
 
+1. **GVC-Calc App** — visit the app site [GVC-Calc](https://gvc-calc.streamlit.app/).
+2. **Select `Data Structure`** - this is the first step. It let's the app know the structure of the data files (datetime column, glucose column, header row, etc.)
+
+<img width="748" height="228" alt="image" src="https://github.com/user-attachments/assets/8a37b5cc-30de-4ebd-88c8-5bf606235635" />
+
+3. **Click `Browse files`** — select one of the folders and use that data. In this example, we use the first file in `hall_data`.
+
+<img width="602" height="420" alt="image" src="https://github.com/user-attachments/assets/374b7e37-7cfc-4acb-9edf-6cc70d5d9d77" />
+
+<img width="543" height="144" alt="image" src="https://github.com/user-attachments/assets/9a30a545-cafa-4a4f-80c2-99db97b12509" />
+
+4. **Select the appropriate settings for the files in this folder.** — Choose the header row, the number of rows to be skipped, time deltas used (1 or 5 for this data), the datetime column and the glucose column. Click `OK -> Import` to allow that option on the sidebar.
+<img width="749" height="549" alt="image" src="https://github.com/user-attachments/assets/9a24d2eb-215b-47e7-b0d5-9118b7c2334b" />
+
+5. **Import Data** — Select the `Import Data` menu from the sidebar which only appears after Step 4. Select the `Browse files` from this page and then select the files from the folder that contain CGM files that are similar in structure to the file you browsed in Step 3. Select the data by holding down the \<Shift\> ⬆️ or \<Ctrl\> 🔼 keys  
+<img width="601" height="552" alt="image" src="https://github.com/user-attachments/assets/f49bd38b-c477-43a0-a80a-3c80b3195f04" />
