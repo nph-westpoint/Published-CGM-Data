@@ -65,4 +65,6 @@ Published-CGM-Data-main/
 
 5. **Import Data** — Select the `Import Data` menu from the sidebar which only appears after Step 4. Select the `Browse files` from this page and then select the files from the folder that contain CGM files that are similar in structure to the file you browsed in Step 3. Select the data by holding down the \<Shift\> ⬆️ or \<Ctrl\> 🔼 keys to select multiple files.<br>
 
-<img width="601" height="552" alt="image" src="https://github.com/user-attachments/assets/f49bd38b-c477-43a0-a80a-3c80b3195f04" />
+<img width="601" height="552" alt="image" src="https://github.com/user-attachments/assets/f49bd38b-c477-43a0-a80a-3c80b3195f04" /> <br>
+
+6. Click `OK` and `Explore Data`.
