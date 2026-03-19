@@ -1,144 +1,32 @@
 # Published-CGM-Data
-CGM data that can be used in GVC-Calc as a demonstration.
+
+Continuous Glucose Monitoring data (CGM) data which are publically available  
+This repository is here for anyone running [GVC-Calc](https://gvc-calc.streamlit.app/) that does not have access to CGM data and would like to demonstrate its features.
 
 ---
 
-## How this repo is organized
+## Repository Organization
 
 ```
-streamlit-workshop/
-├── app.py                        ← completed reference app (Math Function Explorer)
-├── requirements.txt              ← Python dependencies
-├── shells/
-│   ├── activity_1_guided.py      ← ★☆☆  fill-in-the-blank sine wave explorer
-│   ├── activity_2_stats.py       ← ★★☆  statistics dashboard with more blanks
-│   └── activity_3_challenge.py   ← ★★★  blank canvas, 5 mission prompts
+Published-CGM-Data/
+├── data/                         ← top level data folder
+│   ├── Hall/                     ← Data from Hall (2018 Study)
+│   ├── Osuna/                    ← Data from 
 └── README.md                     ← you are here
 ```
+The data in this repository comes from the following sources and have been preprocessed for easy use in the app and to mimic how data comes from a CGM.
 
-**Suggested path through the workshop:**
-1. **Setup** — install Python + dependencies (below)
-2. **Brief** — instructor walks through `app.py` live, section by section
-3. **Lab** — participants open a `shells/` file and fill in the blanks
-4. **Deploy** — push to GitHub and share a public URL via Streamlit Cloud
+[Data Source - Hall](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.2005143#pbio.2005143.s010) <br>
+Hall H, Perelman D, Breschi A, Limcaoco P, Kellogg R, et al. (2018) Glucotypes reveal new patterns of glucose dysregulation. PLOS Biology 16(7): e2005143. https://doi.org/10.1371/journal.pbio.2005143
 
----
+[Data Source - Osuna](https://physionet.org/content/cgmacros/1.0.0/) <br>
+Gutierrez-Osuna, R., Kerr, D., Mortazavi, B., & Das, A. (2025). CGMacros: a scientific dataset for personalized nutrition and diet monitoring (version 1.0.0). PhysioNet. RRID:SCR_007345. https://doi.org/10.13026/3z8q-x658
 
-## Setup (do this before the workshop)
 
-### 1. Install Python
-Download from **python.org/downloads** — choose Python 3.11 or 3.12.
-During install on Windows, **check "Add Python to PATH"**.
-
-### 2. Get the workshop files
-
-**Option A — download zip (no git needed):**
-Go to **github.com/usma-stats/streamlit-workshop** → click **Code → Download ZIP** → unzip anywhere.
-
-**Option B — git clone:**
-```bash
-git clone https://github.com/usma-stats/streamlit-workshop.git
-cd streamlit-workshop
-```
-
-### 3. Install dependencies
-Open a terminal (Command Prompt on Windows, Terminal on Mac) inside the folder:
-```bash
-pip install -r requirements.txt
-```
-
-### 4. Verify everything works
-```bash
-streamlit run app.py
-```
-A browser tab opens at **http://localhost:8501** — your app is live. Close it with `Ctrl+C`.
+**Suggested path:**
+1. **Navigate to one of the data folders (or both)** — Click the download and save the zip file to a folder.
+2. **Unzip the folder** — create a folder on your computer that you will be able to access in the GVC-Calc app.
+3. **GVC-Calc App** — visit the app site and follow the directions.
 
 ---
 
-## Part 1 — Brief (instructor-led, ~30 min)
-
-The instructor walks through `app.py` live. Each section is marked with a `# STEP N` comment:
-
-| Step | Time | Topic | Key commands |
-|------|------|-------|--------------|
-| 1 | 0–5 min | Hello, Streamlit | `st.title`, `st.write`, `st.markdown` |
-| 2 | 5–15 min | Widgets | `st.selectbox`, `st.slider` |
-| 3 | 15–20 min | Math rendering | `st.latex` |
-| 4 | 20–28 min | Interactive plot | `st.pyplot`, `st.columns`, `st.metric` |
-| 5 | 28–30 min | Data table | `st.dataframe`, `st.download_button` |
-| Bonus | — | Polish | sidebar, `st.expander` |
-
-**Key idea to emphasize:** Streamlit reruns the entire script top-to-bottom on every widget interaction. No callbacks, no state machines — that's the whole model.
-
----
-
-## Part 2 — Lab Activities (self-paced)
-
-Open a file from the `shells/` folder and fill in the blanks.
-Look for `### YOUR CODE HERE ###` (something missing) and `# FIX-ME:` (something wrong).
-Use `app.py` and the Quick Reference below when stuck.
-
-| File | Difficulty | What you build |
-|------|-----------|----------------|
-| `shells/activity_1_guided.py` | ★☆☆ Guided | Sine wave explorer — sliders, fix the formula, LaTeX, plot, metric |
-| `shells/activity_2_stats.py` | ★★☆ Intermediate | Statistics dashboard — generate data, histogram, fix 4 stats, download button |
-| `shells/activity_3_challenge.py` | ★★★ Challenge | Free build — Taylor series, projectile motion, grade curve, Fourier series, or your own idea |
-
-```bash
-# run any activity directly:
-streamlit run shells/activity_1_guided.py
-```
-
-Start with Activity 1. Move to 2 or 3 if you finish early or want a harder challenge.
-
----
-
-## Part 3 — Deploy to the web (free)
-
-Once your app is working locally, share it with the world in a few minutes:
-
-1. Push your code to a **public GitHub repo**.
-2. Go to **share.streamlit.io** and sign in with GitHub.
-3. Select your repo, set the main file to `app.py`, click **Deploy**.
-
-You get a permanent public URL — no server, no cost.
-
----
-
-## Quick Reference
-
-```python
-# ── Text ────────────────────────────────────────────────────
-st.title("Big heading")
-st.header("Section heading")
-st.markdown("**bold**, _italic_, inline $LaTeX$, or ---")
-st.latex(r"\int_0^\infty e^{-x^2}\,dx = \frac{\sqrt{\pi}}{2}")
-
-# ── Widgets (each returns a value) ─────────────────────────
-x      = st.slider("Label", min_val, max_val, default)
-choice = st.selectbox("Label", ["A", "B", "C"])
-on     = st.checkbox("Enable feature")
-text   = st.text_input("Enter something")
-n      = st.number_input("Integer", min_value=0, value=10, step=1)
-
-# ── Layout ──────────────────────────────────────────────────
-col1, col2 = st.columns(2)          # equal columns
-col1, col2 = st.columns([3, 1])     # 3:1 ratio
-with col1:
-    st.write("Left column")
-
-st.sidebar.slider(...)              # put any widget in the sidebar
-
-with st.expander("Click to expand"):
-    st.write("Hidden until clicked")
-
-# ── Charts ──────────────────────────────────────────────────
-st.pyplot(fig)                      # matplotlib figure
-st.plotly_chart(fig)                # plotly figure
-st.line_chart(df)                   # quick built-in (no setup needed)
-
-# ── Data & metrics ──────────────────────────────────────────
-st.dataframe(df)
-st.metric("Label", value, delta)    # delta shows +/- change in green/red
-st.download_button("⬇️ Download", data, "filename.csv", "text/csv")
-```
