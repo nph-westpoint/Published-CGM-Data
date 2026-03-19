@@ -10,8 +10,8 @@ This repository is here for anyone running [GVC-Calc](https://gvc-calc.streamlit
 ```
 Published-CGM-Data/
 ├── data/                         ← top level data folder
-│   ├── Hall/                     ← Data from Hall (2018 Study)
-│   ├── Osuna/                    ← Data from 
+│   ├── hall_data/                     ← Data from Hall (2018 Study)
+│   ├── osuna_data/                    ← Data from 
 └── README.md                     ← you are here
 ```
 The data in this repository comes from the following sources and have been preprocessed for easy use in the app and to mimic how data comes from a CGM.
@@ -22,11 +22,18 @@ Hall H, Perelman D, Breschi A, Limcaoco P, Kellogg R, et al. (2018) Glucotypes r
 [Data Source - Osuna](https://physionet.org/content/cgmacros/1.0.0/) <br>
 Gutierrez-Osuna, R., Kerr, D., Mortazavi, B., & Das, A. (2025). CGMacros: a scientific dataset for personalized nutrition and diet monitoring (version 1.0.0). PhysioNet. RRID:SCR_007345. https://doi.org/10.13026/3z8q-x658
 
+---
 
-**Suggested path:**
-1. **Navigate to one of the data folders (or both)** — Click the download and save the zip file to a folder.
-2. **Unzip the folder** — create a folder on your computer that you will be able to access in the GVC-Calc app.
-3. **GVC-Calc App** — visit the app site and follow the directions.
+## Suggested download instructions:
+1. **Navigate to this Repository's Opening Page** — Click the green `Code` button, then `Download ZIP`.
+   
+<img width="713" height="338" alt="image" src="https://github.com/user-attachments/assets/337e5e3e-1254-4dc2-97a8-1ca57e4a9c8f" />
+
+2. **Unzip the folder** — Unzip the folder in some place that you are able to find when using GVC-Calc by right-clicking it and using the `Extract All...` option. The extracted file structure will look the same as the `Repository Organization`. Since the structure of the data in each folder is the same, the `hall_data` folder  
+
+<img width="598" height="302" alt="image" src="https://github.com/user-attachments/assets/dffc602e-6e59-454f-a0c3-d53ebc59de85" />
+
+3. **GVC-Calc App** — visit the app site and follow the directions. Use the app by navigating to each folder from the unzipped directory.
 
 ---
 
