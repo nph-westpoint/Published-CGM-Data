@@ -1,6 +1,6 @@
 # Published-CGM-Data
 
-Continuous Glucose Monitoring data (CGM) data which are publically available  
+Continuous Glucose Monitoring data (CGM) data which are publically available.
 This repository is here for anyone running [GVC-Calc](https://gvc-calc.streamlit.app/) that does not have access to CGM data and would like to demonstrate its features.
 
 ---
