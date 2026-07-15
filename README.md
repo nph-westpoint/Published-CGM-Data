@@ -12,6 +12,7 @@ Published-CGM-Data/
 ├── data/                              ← top level data folder
 │   ├── hall_data/                     ← Data from Hall (2018 Study)
 │   ├── osuna_data/                    ← Data from Osuna (2025 Osuna)
+|   ├── compare/                       ← Data used to compare analysis
 └── README.md                          ← you are here
 ```
 The data in this repository comes from the following sources and have been preprocessed for easy use in the app and to mimic how data comes from a CGM.
