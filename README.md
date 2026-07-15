@@ -41,6 +41,7 @@ Published-CGM-Data-main/
 ├── data/                              ← top level data folder
 │   ├── hall_data/                     ← Data from Hall (2018 Study)
 │   ├── osuna_data/                    ← Data from Osuna (2025 Osuna)
+|   ├── compare/                       ← Data used to compare analysis tools
 ├── README.md                          ← you are here
 └── LICENSE                            
 ```
